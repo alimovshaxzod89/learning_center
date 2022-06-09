@@ -1,37 +1,37 @@
 <template>
     <div class="statistics text-center">
         <h3>Learning Center Statistics</h3>
-       <div class="stats w-75 d-flex justify-content-between text-center mt-5">
+       <div class="stats row w-75 d-flex justify-content-between text-center mt-5">
 
-            <div class="stats_group">
+            <div class="stats_group col-md-3 col-sm-6">
                 <div class="my_icon_group">
                     <box-icon class="my_icon" name='male-female' color='white'></box-icon>
                 </div>
-                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="34" duration="1500" thousand="." decimal=","></VueJsCounter>
+                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="34" duration="2500" thousand="." decimal=","></VueJsCounter>
                 <p>Umumiy o'qituvchilar soni</p>
             </div>
 
-            <div class="stats_group">
+            <div class="stats_group col-md-3 col-sm-6">
                 <div class="my_icon_group">
                     <box-icon class="my_icon" type='solid' name='group' color='white'></box-icon>
                 </div>
-                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="156" duration="1500" thousand="." decimal=","></VueJsCounter>
+                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="156" duration="2500" thousand="." decimal=","></VueJsCounter>
                 <p>Umumiy o'quvchilar soni</p>
             </div>
 
-            <div class="stats_group">
+            <div class="stats_group col-md-3 col-sm-6">
                 <div class="my_icon_group">
                     <box-icon class="my_icon" type='solid' name='user-detail' color='white'></box-icon>
                 </div>
-                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="200" duration="1500" thousand="." decimal=","></VueJsCounter>
+                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="200" duration="2500" thousand="." decimal=","></VueJsCounter>
                 <p>Tugatgan talabalar soni</p>
             </div>
 
-            <div class="stats_group">
+            <div class="stats_group col-md-3 col-sm-6">
                 <div class="my_icon_group">
                     <box-icon class="my_icon" type='solid' name='user-check' color='white'></box-icon>
                 </div>
-                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="10" duration="1500" thousand="." decimal=","></VueJsCounter>
+                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="10" duration="2500" thousand="." decimal=","></VueJsCounter>
                 <p>Guruhlar soni</p>
             </div>
        </div>
@@ -40,6 +40,7 @@
 <script>
 import 'boxicons'
 import VueJsCounter from 'vue-js-counter'
+
 export default {
     components:{
         VueJsCounter

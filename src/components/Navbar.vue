@@ -39,7 +39,9 @@ a{
     color: #1E1F4B;
 }
 .navbar_menues{
-    transform: translateX(10%);
+    /* margin-left: 150px; */
+    display: flex;
+    justify-content: center;
 }
 
 .navbar_logo img{

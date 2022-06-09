@@ -35,6 +35,7 @@ export default {
 .right_section{
     width: 546px;
     height: 631px;
+    position: relative;
 }
 .right_section img{
     width: 531px;
