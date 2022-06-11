@@ -57,6 +57,9 @@ export default {
 }
 </script>
 <style scoped>
+.content{
+    background-color: rgba(112, 111, 229, 0.02);
+}
 .teacher_cards{
     padding: 0 20px;
 }
