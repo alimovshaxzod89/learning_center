@@ -1,24 +1,32 @@
 <template>
     <div>
-        <div class="container d-flex justify-content-between w-100">
-            <div class="navbar_logo w-25">
-                <img src="@/assets/img/logo.png" alt="">
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <div class="container d-flex justify-content-between w-100">
+                <div class="navbar-brand navbar_logo w-25">
+                    <img src="@/assets/img/logo.png" alt="">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class=" w-75 collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>   
+                </ul>
+                </div>
             </div>
-            <div class="navbar_menues d-flex w-75">
-                <p> 
-                    <a href="#">Home</a> 
-                </p>
-                <p>
-                    <a href="#">About Us</a>
-                </p>
-                <p>
-                    <a href="#">Services</a>
-                </p>
-                <p>
-                    <a href="#">Products</a>
-                </p>
-            </div>
-        </div>
+        </nav>
+        
     </div>
 </template>
 <script>
@@ -27,19 +35,25 @@ export default {
 }
 </script>
 <style scoped>
-.navbar_menues p{
+.navbar{
+    background-color: white !important;
+    padding: 30px 0;
+}
+.navbar-nav li a{
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
-    padding: 30px;   
+    padding: 0 30px !important;   
 }
 a{
     text-decoration: none;
-    color: #1E1F4B;
+    color: #1E1F4B !important;
 }
-.navbar_menues{
-    /* margin-left: 150px; */
+a:hover{
+    color: #706FE5 !important;
+}
+.navbar-nav{
     display: flex;
     justify-content: center;
 }
@@ -47,6 +61,5 @@ a{
 .navbar_logo img{
     width: 77px;
     height: 36px;
-    margin-top: 30px;
 }
 </style>
