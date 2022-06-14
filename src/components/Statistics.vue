@@ -7,7 +7,7 @@
                 <div class="my_icon_group">
                     <box-icon class="my_icon" name='male-female' color='white'></box-icon>
                 </div>
-                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="34" duration="2500" thousand="." decimal=","></VueJsCounter>
+                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="34" duration="3500" thousand="." decimal=","></VueJsCounter>
                 <p>Umumiy o'qituvchilar soni</p>
             </div>
 
@@ -15,7 +15,7 @@
                 <div class="my_icon_group">
                     <box-icon class="my_icon" type='solid' name='group' color='white'></box-icon>
                 </div>
-                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="156" duration="2500" thousand="." decimal=","></VueJsCounter>
+                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="156" duration="3500" thousand="." decimal=","></VueJsCounter>
                 <p>Umumiy o'quvchilar soni</p>
             </div>
 
@@ -23,7 +23,7 @@
                 <div class="my_icon_group">
                     <box-icon class="my_icon" type='solid' name='user-detail' color='white'></box-icon>
                 </div>
-                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="200" duration="2500" thousand="." decimal=","></VueJsCounter>
+                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="200" duration="3500" thousand="." decimal=","></VueJsCounter>
                 <p>Tugatgan talabalar soni</p>
             </div>
 
@@ -31,7 +31,7 @@
                 <div class="my_icon_group">
                     <box-icon class="my_icon" type='solid' name='user-check' color='white'></box-icon>
                 </div>
-                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="10" duration="2500" thousand="." decimal=","></VueJsCounter>
+                <VueJsCounter style="font-size: 25px; line-height: 60px;" start="0" end="10" duration="3500" thousand="." decimal=","></VueJsCounter>
                 <p>Guruhlar soni</p>
             </div>
        </div>
@@ -85,4 +85,32 @@ export default {
     line-height: 15px;
 }
 
+
+/* Media */
+@media only screen and (max-width: 760px) {
+    .statistics h3{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .my_icon_group{
+        width: 60px;
+        height: 60px;
+    }
+    .stats_group p{
+        font-size: 15px;
+        line-height: 15px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    
+    .statistics{
+        background-color: rgb(255, 255, 255);
+    }
+    .statistics h3{
+        margin-left: 7%;
+    }
+    .stats_group{
+        margin-left: 7%;
+    }
+}
 </style>

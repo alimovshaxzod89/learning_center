@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="teacher">
         <div>
             <h2 class="title">Let's hear <br> What they says</h2>
         </div>
@@ -38,13 +38,64 @@ export default {
 .title::before{
     content: url('@/assets/img/string.png');
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 55%;
+    left: 18%;
 }
 .title::after{
     content: url('@/assets/img/string.png');
     position: absolute;
-    top: 50%;
-    right: 20%;
+    top: 55%;
+    right: 18%;
+}
+@media only screen and (max-width: 1000px) {
+    .text p{
+        font-size: 14px;
+        line-height: 40px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .text p{
+        font-size: 10px;
+        line-height: 25px;
+    }
+    .title{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .title::before{
+        top: 55%;
+        left: 10%;
+    }
+    .title::after{
+        top: 55%;
+        right: 10%;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .text p{
+        font-size: 7px;
+        line-height: 15px;
+    }
+    .title{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .title::before{
+        content: url('@/assets/img/string.png');
+        position: absolute;
+        width: 5px !important;
+        height: 5px !important;
+        top: 50%;
+        left: 10%;
+    }
+    .title::after{
+        content: url('@/assets/img/string.png');
+        position: absolute;
+        top: 50%;
+        right: 10%;
+    }
+    .teacher{
+        margin-left: 5%;
+    }
 }
 </style>

@@ -199,6 +199,9 @@ export default {
         font-size: 10px;
         line-height: 15px;
     }
+    .right_section{
+        height: 400px;
+    }
 }
 @media only screen and (max-width: 770px) {
     .left_section h1{
@@ -241,6 +244,9 @@ export default {
         margin-top: 9px;
         font-size: 7px;
         line-height: 10px;
+    }
+    .right_section{
+        height: 300px;
     }
 }
 @media only screen and (max-width: 492px) {
@@ -285,8 +291,12 @@ export default {
         font-size: 5px;
         line-height: 8px;
     }
+    .right_section{
+        height: 250px;
+    }
 }
 @media only screen and (max-width: 437px) {
+    
     .left_section h1{
         font-size: 14px;
         line-height: 28px;
@@ -316,6 +326,9 @@ export default {
     }
     .players_text{
         margin-top: -3px;
+    }
+    .right_section{
+        height: 200px;
     }
 }
 

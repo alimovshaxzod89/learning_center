@@ -5,10 +5,10 @@
     </div>
     <div class="row" >
       <div class="col-md-12" >
-        <hooper :progress="true" :autoPlay="false" :playSpeed="3000" style="height: 450px;">
+        <hooper class="hooper" :progress="true" :autoPlay="false" :playSpeed="3000" style="height: 400px;">
+          
           <!-- Slide -->
           <slide class="d-flex justify-content-center">
-
             <div class="card" style="width: 400px; height: 400px; ">
               <img class="card-img-top" src="@/assets/img/lCenter1.jpg" alt="Card image cap">
               <div class="card-body ">
@@ -195,5 +195,50 @@ h3{
 .card
 {
   overflow: scroll !important;
+}
+@media only screen and (max-width: 992px) {
+  .title{
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .title{
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .card{
+    max-height: 250px !important;
+  }
+  .card-body h5{
+    font-size: 15px ;
+  }
+  .card-body p{
+    font-size: 7px;
+    line-height: 10px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .title{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .container{
+    margin-left: 5%;
+  }
+  .card{
+    max-height: 200px !important;
+  }
+  .card-body h5{
+    font-size: 10px;
+    line-height: 1px;
+  }
+  .card-body p{
+    font-size: 4px;
+    line-height: 8px;
+  }
+  .hooper{
+    height: 200px !important;
+  }
 }
 </style>

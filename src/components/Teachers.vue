@@ -1,9 +1,9 @@
 <template>
     <div class="content mt-5">
         <component :is="selectedComp"></component>
-        <div class="container d-flex flex-wrap justify-content-center mt-5">
+        <div class="container row m-auto">
 
-            <div class="teacher_cards" @click="selectedComp='AboutTeacher1'">
+            <div class="teacher_cards col-md-3 col-sm-6 " @click="selectedComp='AboutTeacher1'">
                 <div class="teacher_photo d-flex justify-content-center">
                     <img src="@/assets/img/teacher1.png" alt="">
                 </div>
@@ -11,7 +11,7 @@
                 <p>Math</p>
             </div>
 
-            <div class="teacher_cards" @click="selectedComp='AboutTeacher2'">
+            <div class="teacher_cards col-md-3 col-sm-6 " @click="selectedComp='AboutTeacher2'">
                 <div class="teacher_photo d-flex justify-content-center">
                     <img src="@/assets/img/teacher2.png" alt="">
                 </div>
@@ -19,7 +19,7 @@
                 <p>Philosofy</p>
             </div>
 
-            <div class="teacher_cards" @click="selectedComp='AboutTeacher3'">
+            <div class="teacher_cards col-md-3 col-sm-6 " @click="selectedComp='AboutTeacher3'">
                 <div class="teacher_photo d-flex justify-content-center">
                     <img src="@/assets/img/teacher3.png" alt="">
                 </div>
@@ -27,7 +27,7 @@
                 <p>Music</p>
             </div>
             
-            <div class="teacher_cards" @click="selectedComp='AboutTeacher4'">
+            <div class="teacher_cards col-md-3 col-sm-6 " @click="selectedComp='AboutTeacher4'">
                 <div class="teacher_photo d-flex justify-content-center">
                     <img src="@/assets/img/teacher4.png" alt="">
                 </div>
@@ -62,6 +62,7 @@ export default {
 }
 .teacher_cards{
     padding: 0 20px;
+    margin-top: 140px;
 }
 .teacher_photo img{
     width: 60px;
@@ -81,5 +82,23 @@ p{
     font-size: 20px;
     line-height: 30px;
     text-align: center;
+}
+@media only screen and (max-width: 578px) {
+    .teacher_cards{
+        margin-top: 40px;
+    }
+    .teacher_cards h4{
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .teacher_cards p{
+        font-size: 10px;
+        line-height: 0px;
+    }
+}
+@media only screen and (max-width: 406px) {
+    .container{
+        margin-left: 5% !important;
+    }
 }
 </style>

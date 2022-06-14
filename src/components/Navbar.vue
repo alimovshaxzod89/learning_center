@@ -5,7 +5,7 @@
                 <div class="navbar-brand navbar_logo w-25">
                     <img src="@/assets/img/logo.png" alt="">
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <button class="navbar-toggler" type="button" style="font-size: 15px;" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class=" w-75 collapse navbar-collapse" id="collapsibleNavbar">
