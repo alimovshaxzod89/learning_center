@@ -145,7 +145,10 @@ ul li a{
 }
 @media only screen and (max-width: 579px) {
     ul{
-        display: block !important;
+        flex-direction: column;
+    }
+    ul li {
+        margin: 5px 0;
     }
     .footer_btn{
         display: flex;
@@ -157,8 +160,6 @@ ul li a{
     .footer{
         position: relative;
         z-index: 2;
-    }
-    .footer_two{
     }
     .my_icon_group{
         width: 30px;

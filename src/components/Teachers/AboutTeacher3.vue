@@ -72,10 +72,6 @@ export default {
     }
 }
 @media only screen and (max-width: 520px) {
-    .text p{
-        font-size: 7px;
-        line-height: 15px;
-    }
     .title{
         font-size: 20px;
         line-height: 30px;

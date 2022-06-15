@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar />
-        <div class="main_head container w-100 d-flex justify-content-between">
+        <div class="main_head container w-100 d-flex justify-content-around">
             <div class="left_section">
                 <h1>We Design Impactful <br> Digital <span class="word_products">Products</span> </h1>
                 <div class="left_section__text">
@@ -237,12 +237,12 @@ export default {
     .my_player{
         width: 25px;
         height: 25px;
-        margin-top: 8px;
+        margin-top: 5px;
         margin-right: 4px;
     }
     .players_text{
-        margin-top: 9px;
-        font-size: 7px;
+        margin-top: 6px;
+        font-size: 10px;
         line-height: 10px;
     }
     .right_section{
@@ -261,7 +261,7 @@ export default {
     .left_section__text p{
         margin-top: 15px;
         line-height: 10px;
-        font-size: 8px;
+        font-size: 10px;
     }
     .word_products{
         padding: 1px 15px;
@@ -272,24 +272,24 @@ export default {
         margin-left: 10%;
     }
     .btn_and_player{
-        width: 150px;
+        width: 200px;
         margin-top: 8px;
     }
     .my_btn{
         padding: 2px 10px;
-        font-size: 5px;
+        font-size: 10px;
         margin-top: 5px;
     }
     .my_player{
-        width: 20px;
-        height: 20px;
+        width: 28px;
+        height: 28px;
         margin-top: 0px;
         margin-right: 4px;
     }
     .players_text{
         margin-top: 2px;
-        font-size: 5px;
-        line-height: 8px;
+        font-size: 8px;
+        line-height: 12px;
     }
     .right_section{
         height: 250px;
@@ -302,8 +302,8 @@ export default {
         line-height: 28px;
     }
     .left_section__text p{
-        line-height: 7px;
-        font-size: 5px;
+        line-height: 11px;
+        font-size: 10px;
     }
     .word_products{
         padding: 0px 10px;
@@ -316,19 +316,18 @@ export default {
     .btn_and_player{
         margin-top: 0px;
     }
-    .my_btn{
-        padding: 2px 10px;
-        font-size: 5px;
+    
+    .my_player{
         margin-top: 0px;
     }
-    .my_player{
-        margin-top: -5px;
-    }
     .players_text{
-        margin-top: -3px;
+        margin-top: 2px;
     }
     .right_section{
         height: 200px;
+    }
+    .btn_and_player{
+        margin-top: 12px;
     }
 }
 

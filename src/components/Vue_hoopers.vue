@@ -13,7 +13,7 @@
               <img class="card-img-top" src="@/assets/img/lCenter1.jpg" alt="Card image cap">
               <div class="card-body ">
                 <h5 class="card-title">Card title</h5>
-                <p  class="card-text overflow-scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam omnis, quis blanditiis maxime laboriosam sit culpa fuga ipsa corporis? Doloremque vero rerum cumque at minima modi quam quasi molestias perferendis consequuntur, nesciunt officiis libero fuga repellat, tenetur voluptates ipsum sequi! Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p  class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam omnis, quis blanditiis maxime laboriosam sit culpa fuga ipsa corporis? Doloremque vero rerum cumque at minima modi quam quasi molestias perferendis consequuntur, nesciunt officiis libero fuga repellat, tenetur voluptates ipsum sequi! Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
             </div>
 
@@ -214,8 +214,11 @@ h3{
     font-size: 15px ;
   }
   .card-body p{
-    font-size: 7px;
+    font-size: 10px;
     line-height: 10px;
+  }
+  .hooper{
+    height: 250px !important;
   }
 }
 @media only screen and (max-width: 430px) {
@@ -229,14 +232,7 @@ h3{
   .card{
     max-height: 200px !important;
   }
-  .card-body h5{
-    font-size: 10px;
-    line-height: 1px;
-  }
-  .card-body p{
-    font-size: 4px;
-    line-height: 8px;
-  }
+  
   .hooper{
     height: 200px !important;
   }

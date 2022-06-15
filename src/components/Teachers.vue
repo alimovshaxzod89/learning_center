@@ -3,7 +3,7 @@
         <component :is="selectedComp"></component>
         <div class="container  m-auto">
             <div class="row">
-            <div class="teacher_cards col-md-3 col-sm-6 " @click="selectedComp='AboutTeacher1'">
+            <div class="teacher_cards col-md-3 col-6 " @click="selectedComp='AboutTeacher1'">
                 <div class="teacher_photo d-flex justify-content-center">
                     <img src="@/assets/img/teacher1.png" alt="">
                 </div>
@@ -11,7 +11,7 @@
                 <p>Math</p>
             </div>
 
-            <div class="teacher_cards col-md-3 col-sm-6 " @click="selectedComp='AboutTeacher2'">
+            <div class="teacher_cards col-md-3 col-6 " @click="selectedComp='AboutTeacher2'">
                 <div class="teacher_photo d-flex justify-content-center">
                     <img src="@/assets/img/teacher2.png" alt="">
                 </div>
@@ -19,7 +19,7 @@
                 <p>Philosofy</p>
             </div>
 
-            <div class="teacher_cards col-md-3 col-sm-6 " @click="selectedComp='AboutTeacher3'">
+            <div class="teacher_cards col-md-3 col-6 " @click="selectedComp='AboutTeacher3'">
                 <div class="teacher_photo d-flex justify-content-center">
                     <img src="@/assets/img/teacher3.png" alt="">
                 </div>
@@ -27,7 +27,7 @@
                 <p>Music</p>
             </div>
             
-            <div class="teacher_cards col-md-3 col-sm-6 " @click="selectedComp='AboutTeacher4'">
+            <div class="teacher_cards col-md-3 col-6 " @click="selectedComp='AboutTeacher4'">
                 <div class="teacher_photo d-flex justify-content-center">
                     <img src="@/assets/img/teacher4.png" alt="">
                 </div>
