@@ -63,7 +63,6 @@ export default {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 40px;
-    font-weight: 52px;
     letter-spacing: .2px;
 }
 .left p{
@@ -108,5 +107,72 @@ export default {
     border-radius: 12px;
     padding: 10px 40px;
     margin-top: 10px;
+}
+
+/* Media */
+
+@media only screen and (max-width: 993px) {
+    .about_us{
+        display: block  !important;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .left{
+        width: 100% !important; 
+        text-align: center;
+    }
+    .left h1{
+        margin-top: 30px;
+    }
+    .my_btn{
+        margin-bottom: 20px;
+    }
+    .right{
+        width: 100% !important; 
+        text-align: center;
+    }
+    .my_icon_group{
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .left h1{
+        font-size: 30px;
+    }
+    .left p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .my_btn{
+        padding: 7px 20px;
+        font-size: 14px;
+    }
+    .my_icon_group{
+        width: 40px;
+        height: 40px;
+    }
+    .my_icon_group .my_icon{
+        font-size: 16px;
+    }
+    .right h3{
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .right p{    
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .right{
+        margin-left: 3%;
+    }
+    .left{
+        margin-left: 3%;
+    }
 }
 </style>

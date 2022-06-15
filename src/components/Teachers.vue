@@ -1,8 +1,8 @@
 <template>
     <div class="content mt-5">
         <component :is="selectedComp"></component>
-        <div class="container row m-auto">
-
+        <div class="container  m-auto">
+            <div class="row">
             <div class="teacher_cards col-md-3 col-sm-6 " @click="selectedComp='AboutTeacher1'">
                 <div class="teacher_photo d-flex justify-content-center">
                     <img src="@/assets/img/teacher1.png" alt="">
@@ -33,6 +33,7 @@
                 </div>
                 <h4>Dr.Martin</h4>
                 <p>Anothomy</p>
+            </div>
             </div>
         </div>
     </div>
@@ -98,7 +99,7 @@ p{
 }
 @media only screen and (max-width: 406px) {
     .container{
-        margin-left: 5% !important;
+        margin-left: 3% !important;
     }
 }
 </style>

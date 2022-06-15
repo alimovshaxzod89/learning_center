@@ -22,9 +22,9 @@
                 </div>
             </div>
         </div>
-        <hr class="container" style="color: white;">
+        <hr class="hr container" style="color: white;">
 
-        <div class="footer_two container d-flex justify-content-between">
+        <div class="footer_two container d-flex">
             <div class="footer_menu w-75">
                 <h4>Company</h4>
                 <ul>
@@ -48,7 +48,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer_btn">
+            <div class="footer_btn d-flex justify-content-end w-25">
                 <button class="my_btn">Contact Us</button>
             </div>
         </div>  
@@ -120,5 +120,69 @@ ul li{
 ul li a{
     text-decoration: none;
     color: #ccc;
+}
+
+.hr{
+    z-index: 2;
+}
+@media only screen and (max-width: 985px) {
+    .my_icon_group{
+        width: 40px;
+        height: 40px;
+        margin: 0 4px;
+    }
+    .my_btn{
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+    .footer_menu h4{
+        font-size: 20px;
+    }
+    .footer_menu ul li a{
+        font-size: 12px;
+    }
+
+}
+@media only screen and (max-width: 579px) {
+    ul{
+        display: block !important;
+    }
+    .footer_btn{
+        display: flex;
+        align-items: flex-end;
+        z-index: 2;
+    }
+}
+@media only screen and (max-width: 486px) {
+    .footer{
+        position: relative;
+        z-index: 2;
+    }
+    .footer_two{
+    }
+    .my_icon_group{
+        width: 30px;
+        height: 30px;
+        margin: 0 3px;
+        z-index: 2;
+    }
+    .hr{
+        display: none;
+    }
+    .footer::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -25px;
+        clip-path: inset(0 0 1% 65%);
+        background-color: #2E3E5C;
+        width: 100%;
+        height: 100%;
+    }
+    .footer_btn{
+        width: 50% !important;
+        display: flex;
+        align-items: flex-end !important;
+    }
 }
 </style>
