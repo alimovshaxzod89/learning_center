@@ -110,7 +110,7 @@ export default {
         margin-left: 7%;
     }
     .stats_group{
-        margin-left: 7%;
+        margin-left: 2%;
     }
 }
 </style>

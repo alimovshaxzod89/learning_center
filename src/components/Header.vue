@@ -11,10 +11,7 @@
                 <div class="btn_and_player d-flex justify-content-between">
                     <button class="my_btn">Contact Us</button>
                     <div class="player d-flex justify-content-center">
-                        <!-- --- -->
                         <div class="my_player" @click="showModel = !showModel"></div>
-                        
-                        <!-- --- -->
                         <div class="players_text">
                             <p>Watch our <br> introduction video</p>
                         </div>
