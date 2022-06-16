@@ -1,6 +1,7 @@
 <template>
-    <div>
+    <div :class="showModel == true ? 'abc' : ''">
         <Navbar />
+        
         <div class="main_head container w-100 d-flex justify-content-around">
             <div class="left_section">
                 <h1>We Design Impactful <br> Digital <span class="word_products">Products</span> </h1>
@@ -10,13 +11,21 @@
                 <div class="btn_and_player d-flex justify-content-between">
                     <button class="my_btn">Contact Us</button>
                     <div class="player d-flex justify-content-center">
-                        <div class="my_player"></div>
+                        <!-- --- -->
+                        <div class="my_player" @click="showModel = !showModel"></div>
+                        
+                        <!-- --- -->
                         <div class="players_text">
                             <p>Watch our <br> introduction video</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <DialogConfirm
+                v-if="showModel == true"
+                @closeModal="closeModal"
+                class="m-auto position-fixed w-75"
+            ></DialogConfirm>
             <div class="right_section">
                 <img src="@/assets/img/headeringirl.png" alt="">
             </div>
@@ -25,9 +34,21 @@
 </template>
 <script>
 import Navbar from '@/components/Navbar.vue'
+import DialogConfirm from '@/components/DiologConfirm.vue'
 export default {
+    data(){
+        return{
+            showModel: false
+        }
+    },
     components:{
         Navbar,
+        DialogConfirm,
+    },
+    methods:{
+        closeModal(){
+            this.showModel = !this.showModel
+        }
     }
 }
 </script>
@@ -56,18 +77,6 @@ export default {
     border-radius: 8px;
     position: relative;
 }
-/* circle */
-/* .word_products::before{
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    border: 8px solid #706FE5;
-} */
 .left_section__text{
     width: 555px;
     height: 108px;
@@ -100,6 +109,7 @@ export default {
     border-radius: 50%;
     margin-right: 20px;
     position: relative;
+    cursor: pointer;
 }
 .my_player::before{
     content: '';
@@ -121,6 +131,15 @@ export default {
     color: #2E3E5C;
 }
 
+.abc::before{
+    /* display: none; */
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(10, 0, 0, 0.411);
+    z-index: 80;
+}
 
 /* Media */
 

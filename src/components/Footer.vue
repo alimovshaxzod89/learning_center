@@ -53,7 +53,7 @@
             </div>
         </div>  
         <div class="footer_tree text-center">
-            <p class="mt-5 pb-5 text-light">© power 2021 - All Rights Reserved</p>
+            <p class="mt-5 pb-5 text-light" style="10">© power 2021 - All Rights Reserved</p>
         </div>
     </div>
 </template>
@@ -174,16 +174,20 @@ ul li a{
         content: '';
         position: absolute;
         top: 0;
-        right: -25px;
+        right: -19px;
         clip-path: inset(0 0 1% 65%);
         background-color: #2E3E5C;
-        width: 100%;
-        height: 100%;
+        width: 60px;
+        height: 101%;
+        z-index: 0;
     }
     .footer_btn{
         width: 50% !important;
         display: flex;
         align-items: flex-end !important;
+    }
+    p{
+        z-index: 10 !important;
     }
 }
 </style>
