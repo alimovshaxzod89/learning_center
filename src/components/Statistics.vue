@@ -1,5 +1,5 @@
 <template>
-    <div class="statistics text-center">
+    <div class="statistics text-center" id="about_us">
         <h3>Learning Center Statistics</h3>
        <div class="stats row w-75 d-flex justify-content-between text-center mt-5">
 

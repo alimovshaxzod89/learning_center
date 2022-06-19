@@ -86,6 +86,10 @@ export default {
     border-radius: 50%;
     position: relative;
     margin: 0 7px;
+    transition: .4s;
+}
+.my_icon_group:hover{
+    background-color: #a3a1ffd3;
 }
 .my_icon_group .my_icon{
     position: absolute;
@@ -103,6 +107,10 @@ export default {
     border-radius: 12px;
     padding: 10px 40px;
     margin-top: 50px;
+    transition: .4s;
+}
+.my_btn:hover{
+    background-color: #a3a1ffd3;
 }
 .footer_menu h4{
     color: #ccc;

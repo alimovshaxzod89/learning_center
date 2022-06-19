@@ -2,7 +2,7 @@
     <div :class="showModel == true ? 'abc' : ''">
         <Navbar />
         
-        <div class="main_head container w-100 d-flex justify-content-around">
+        <div class="main_head container w-100 d-flex justify-content-around"  id="our_home">
             <div class="left_section">
                 <h1>We Design Impactful <br> Digital <span class="word_products">Products</span> </h1>
                 <div class="left_section__text">
@@ -11,7 +11,7 @@
                 <div class="btn_and_player d-flex justify-content-between">
                     <button class="my_btn">Contact Us</button>
                     <div class="player d-flex justify-content-center">
-                        <div class="my_player" @click="showModel = !showModel"></div>
+                        <div class="my_player" @click="openModal"></div>
                         <div class="players_text">
                             <p>Watch our <br> introduction video</p>
                         </div>
@@ -21,7 +21,7 @@
             <DialogConfirm
                 v-if="showModel == true"
                 @closeModal="closeModal"
-                class="m-auto position-fixed w-75"
+                class="d_confirm m-auto position-fixed"
             ></DialogConfirm>
             <div class="right_section">
                 <img src="@/assets/img/headeringirl.png" alt="">
@@ -35,7 +35,7 @@ import DialogConfirm from '@/components/DiologConfirm.vue'
 export default {
     data(){
         return{
-            showModel: false
+            showModel: false,
         }
     },
     components:{
@@ -43,10 +43,20 @@ export default {
         DialogConfirm,
     },
     methods:{
+        openModal(){
+            this.showModel = !this.showModel
+            if(this.showModel == true){
+                document.body.style.cssText = 'overflow: hidden'
+            }
+        },
         closeModal(){
             this.showModel = !this.showModel
+            if(this.showModel == false){
+                document.body.style.cssText = 'overflow: scroll !important'
+            }
+            
         }
-    }
+    },
 }
 </script>
 <style scoped>
@@ -97,8 +107,11 @@ export default {
     border-radius: 12px;
     height: 50%;
     padding: 10px 40px;
+    transition: .4s;
 }
-
+.my_btn:hover{
+    background-color: #716fe5d3;
+}
 .my_player{
     width: 48px;
     height: 48px;
@@ -107,6 +120,11 @@ export default {
     margin-right: 20px;
     position: relative;
     cursor: pointer;
+    transition: .9s;
+}
+.my_player:hover{
+    transform: rotate(180deg);
+    box-shadow: 0px 0px 20px #706FE5;
 }
 .my_player::before{
     content: '';
@@ -128,6 +146,7 @@ export default {
     color: #2E3E5C;
 }
 
+
 .abc::before{
     /* display: none; */
     position: absolute;
@@ -136,6 +155,9 @@ export default {
     height: 100vh;
     background-color: rgba(10, 0, 0, 0.411);
     z-index: 80;
+}
+.d_confirm{
+    width: 60% !important;
 }
 
 /* Media */

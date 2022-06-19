@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="our_services">
         <div class="about_us container d-flex justify-content-between">
             <!-- Left -->
             <div class="left w-50">
@@ -107,6 +107,10 @@ export default {
     border-radius: 12px;
     padding: 10px 40px;
     margin-top: 10px;
+    transition: .4s;
+}
+.my_btn:hover{
+    background-color: #716fe5d3;
 }
 
 /* Media */

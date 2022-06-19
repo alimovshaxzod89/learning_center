@@ -11,16 +11,16 @@
                 <div class=" w-75 collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav d-flex justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#our_home" v-smooth-scroll>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#about_us" v-smooth-scroll>About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#vue_hooper" v-smooth-scroll>Services</a>
                     </li>    
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
+                        <a class="nav-link" href="#our_services"  v-smooth-scroll>Products</a>
                     </li>   
                 </ul>
                 </div>
@@ -30,6 +30,7 @@
     </div>
 </template>
 <script>
+
 export default {
     
 }

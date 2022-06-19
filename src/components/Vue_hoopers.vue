@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5">
+  <div class="container mt-5" id="vue_hooper">
     <div>
       <h3 class="title mb-4">We create world-class digital classes</h3>
     </div>
