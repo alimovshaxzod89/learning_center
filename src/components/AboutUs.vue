@@ -1,5 +1,5 @@
 <template>
-    <div id="our_services">
+    <div id="our_services" class="our_services">
         <div class="about_us container d-flex justify-content-between">
             <!-- Left -->
             <div class="left w-50">
@@ -10,19 +10,42 @@
                 </div>
                 <button class="my_btn">Send to message</button>
             </div>
+
+            <!-- Modals -->
+
+            <MyDiologOne 
+                v-if="showModalOne == true" 
+                class="d_confirm m-auto position-fixed"
+                @closeModal="closeModal"
+            />
+            <MyDiologTwo 
+                v-if="showModalTwo == true" 
+                class="d_confirm m-auto position-fixed"
+                @closeModalTwo="closeModalTwo"
+            />
+            <MyDiologThree
+                v-if="showModalThree == true" 
+                class="d_confirm m-auto position-fixed"
+                @closeModalThree="closeModalThree"
+            />
+            <MyDiologFour
+                v-if="showModalFour == true" 
+                class="d_confirm m-auto position-fixed"
+                @closeModalFour="closeModalFour"
+            />
             
             <!-- Right -->
             <div class="right w-50">
                 <div class="right_top d-flex justify-content-between">
                     <div>
-                        <div class="my_icon_group">
+                        <div class="my_icon_group" @click="showModel_One()">
                             <box-icon class="my_icon" name='bar-chart-alt-2' color='white' ></box-icon>
                         </div>
                         <h3>UI/UX Design</h3>
                         <p>Sometimes features require <br> a short description</p>
                     </div>
                     <div>
-                        <div class="my_icon_group">
+                        <div class="my_icon_group" @click="showModel_Two()">
                             <box-icon class="my_icon" type='solid' name='barcode' color='white'></box-icon>
                         </div>
                         <h3>UI/UX Design</h3>
@@ -31,14 +54,14 @@
                 </div>
                 <div class="right_bottom d-flex justify-content-between">
                     <div>
-                        <div class="my_icon_group">
+                        <div class="my_icon_group" @click="showModel_Three()">
                             <box-icon class="my_icon" type='solid' name='barcode' color='white'></box-icon>
                         </div>
                         <h3>UI/UX Design</h3>
                         <p>Sometimes features require <br> a short description</p>
                     </div>
                     <div>
-                        <div class="my_icon_group">
+                        <div class="my_icon_group" @click="showModel_Four()">
                             <box-icon class="my_icon" type='solid' name='barcode' color='white'></box-icon>
                         </div>
                         <h3>UI/UX Design</h3>
@@ -48,14 +71,62 @@
             </div>
         </div>
         
+        
     </div>
 </template>
 <script>
+import MyDiologOne from '@/components/Modals/MyModalOne.vue'
+import MyDiologTwo from '@/components/Modals/MyModalTwo.vue'
+import MyDiologThree from '@/components/Modals/MyModalThree.vue'
+import MyDiologFour from '@/components/Modals/MyModalFour.vue'
+
 export default {
-    
+    data(){
+        return{
+            showModalOne: false,
+            showModalTwo: false,
+            showModalThree: false,
+            showModalFour: false
+        }
+    },
+    components:{
+        MyDiologOne,
+        MyDiologTwo,
+        MyDiologThree,
+        MyDiologFour
+    },
+    methods:{
+        showModel_One(){
+            this.showModalOne = !this.showModalOne
+        },
+        closeModal(){
+            this.showModalOne = !this.showModalOne
+        },
+        showModel_Two(){
+            this.showModalTwo = !this.showModalTwo
+        },
+        closeModalTwo(){
+            this.showModalTwo = !this.showModalTwo
+        },
+        showModel_Three(){
+            this.showModalThree = !this.showModalThree
+        },
+        closeModalThree(){
+            this.showModalThree = !this.showModalThree
+        },
+        showModel_Four(){
+            this.showModalFour = !this.showModalFour
+        },
+        closeModalFour(){
+            this.showModalFour = false
+        },
+    }
 }
 </script>
 <style scoped>
+.our_services{
+    position: relative;
+}
 .about_us{
     margin-top: 15%;
 }
@@ -111,6 +182,10 @@ export default {
 }
 .my_btn:hover{
     background-color: #716fe5d3;
+}
+
+.d_confirm{
+    width: 60% !important;
 }
 
 /* Media */
